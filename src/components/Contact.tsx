@@ -9,8 +9,7 @@ import {
   MapPin, 
   Clock, 
   Instagram, 
-  Facebook, 
-  Linkedin,
+  Facebook,
   ArrowRight,
   CheckCircle
 } from "lucide-react";
@@ -110,20 +109,20 @@ const Contact = () => {
                   <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Phone className="w-5 h-5 text-primary" />
                   </div>
-                  <div>
-                    <div className="font-medium text-foreground">(11) 9999-9999</div>
+                  <a href="https://wa.me/85994198383" target="_blank">
+                    <div className="font-medium text-foreground underline">(85) 99419-8383</div>
                     <div className="text-sm text-muted-foreground">WhatsApp e Ligações</div>
-                  </div>
+                  </a>
                 </div>
 
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-water/10 rounded-lg flex items-center justify-center">
                     <Mail className="w-5 h-5 text-water" />
                   </div>
-                  <div>
-                    <div className="font-medium text-foreground">contato@siriusgarden.com</div>
+                  <a href="mailto:gardensirius@gmail.com">
+                    <div className="font-medium text-foreground">gardensirius@gmail.com</div>
                     <div className="text-sm text-muted-foreground">E-mail principal</div>
-                  </div>
+                  </a>
                 </div>
 
                 <div className="flex items-center space-x-3">
@@ -131,8 +130,7 @@ const Contact = () => {
                     <MapPin className="w-5 h-5 text-nature" />
                   </div>
                   <div>
-                    <div className="font-medium text-foreground">São Paulo, SP</div>
-                    <div className="text-sm text-muted-foreground">Atendemos toda Grande SP</div>
+                    <div className="font-medium text-foreground">Fortaleza, CE</div>
                   </div>
                 </div>
 
@@ -151,15 +149,12 @@ const Contact = () => {
               <div className="mt-6 pt-6 border-t border-border">
                 <p className="text-sm text-muted-foreground mb-3">Siga-nos nas redes sociais:</p>
                 <div className="flex space-x-3">
-                  <Button size="sm" variant="outline" className="p-2">
+                  <a href="https://www.instagram.com/sirius__garden" target="_blank" className="inline-flex items-center justify-center gap-2 text-primary whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:text-accent-foreground h-9 rounded-md p-2 hover:bg-gradient-to-r from-primary to-nature">
                     <Instagram className="w-4 h-4" />
-                  </Button>
-                  <Button size="sm" variant="outline" className="p-2">
+                  </a>
+                  <a href="https://www.facebook.com/people/S%C3%ADrius-Garden/61579645234571/" target="_blank" className="inline-flex items-center justify-center gap-2 text-primary whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background hover:text-accent-foreground h-9 rounded-md p-2 hover:bg-gradient-to-r from-primary to-nature">
                     <Facebook className="w-4 h-4" />
-                  </Button>
-                  <Button size="sm" variant="outline" className="p-2">
-                    <Linkedin className="w-4 h-4" />
-                  </Button>
+                  </a>
                 </div>
               </div>
             </Card>
@@ -201,18 +196,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </Card>
-
-            {/* Emergency Contact */}
-            <Card className="p-6 border-0 shadow-soft bg-gradient-to-br from-accent/5 to-water/5">
-              <h3 className="text-lg font-bold text-foreground mb-3">Atendimento de Emergência</h3>
-              <p className="text-sm text-muted-foreground mb-4">
-                Para urgências em piscinas e sistemas de irrigação, entre em contato:
-              </p>
-              <Button variant="outline" size="sm" className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-                <Phone className="w-4 h-4 mr-2" />
-                (11) 9999-9999 (24h)
-              </Button>
             </Card>
           </div>
         </div>

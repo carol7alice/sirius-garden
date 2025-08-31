@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, Users, Droplets, TreePine, Home } from "lucide-react";
 
@@ -133,11 +132,6 @@ const Projects = () => {
                         ))}
                       </div>
                     </div>
-
-                    <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground group">
-                      Ver Projeto Completo
-                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Button>
                   </div>
 
                   {/* Results */}
@@ -179,13 +173,10 @@ const Projects = () => {
               Vamos criar algo extraordinário juntos!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-nature hover:from-primary-hover hover:to-primary">
+              <a href="https://wa.me/85994198383" target="_blank" className="flex items-center justify-center gap-2 px-8 rounded-md h-11 text-primary-foreground bg-gradient-to-r from-primary to-nature hover:from-primary-hover hover:to-primary leading-[13px]">
                 Solicitar Orçamento Gratuito
                 <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                Baixar Portfólio Completo
-              </Button>
+              </a>
             </div>
           </div>
         </div>

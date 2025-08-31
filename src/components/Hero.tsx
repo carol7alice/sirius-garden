@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 my-4">
         <div className="max-w-2xl">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
@@ -66,17 +66,6 @@ const Hero = () => {
                 <div className="text-sm text-muted-foreground">Sustentável</div>
               </div>
             </div>
-          </div>
-
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-nature hover:from-primary-hover hover:to-primary group">
-              Agendar Visita Gratuita
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              Ver Nossos Projetos
-            </Button>
           </div>
 
           {/* Trust indicators */}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail } from "lucide-react";
+import logoImage from "@/assets/logo-sirius-garden.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,12 +12,12 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-nature rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">S</span>
+            <div className="w-24 h-16 bg-transparent from-primary to-nature rounded-lg flex items-center justify-center">
+              <img src={logoImage} alt="logo sirius garden" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-foreground">Sírius Garden</h1>
-              <p className="text-sm text-muted-foreground">Transformação de Ambientes</p>
+              <p className="text-sm text-muted-foreground">Jardinagem & Piscina</p>
             </div>
           </div>
 
@@ -33,11 +34,11 @@ const Header = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">
               <Phone className="w-4 h-4" />
-              <span>(11) 9999-9999</span>
+              <span>(85) 99419-8383 / (85) 98108-3612</span>
             </div>
-            <Button size="sm" className="bg-gradient-to-r from-primary to-nature hover:from-primary-hover hover:to-primary">
+            <a href="https://wa.me/85994198383" target="_blank" className="text-primary-foreground px-3 rounded-sm h-9 flex items-center justify-center bg-gradient-to-r from-primary to-nature hover:from-primary-hover hover:to-primary">
               Solicitar Orçamento
-            </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

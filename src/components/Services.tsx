@@ -96,11 +96,6 @@ const Services = () => {
                     </div>
                   ))}
                 </div>
-                
-                <Button variant="outline" size="sm" className="w-full group/btn border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Saiba Mais
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
               </Card>
             );
           })}
@@ -133,13 +128,6 @@ const Services = () => {
                 <p className="text-sm text-muted-foreground">{phase.desc}</p>
               </div>
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-nature hover:from-primary-hover hover:to-primary">
-              Iniciar Meu Projeto
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
           </div>
         </div>
       </div>

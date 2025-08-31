@@ -73,26 +73,6 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">500+</div>
-            <div className="text-muted-foreground">Projetos Realizados</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-water mb-2">98%</div>
-            <div className="text-muted-foreground">Satisfação</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-nature mb-2">10+</div>
-            <div className="text-muted-foreground">Anos de Experiência</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-earth mb-2">4.9</div>
-            <div className="text-muted-foreground">Avaliação Média</div>
-          </div>
-        </div>
-
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (

@@ -10,7 +10,7 @@ const About = () => {
             Sobre a <span className="bg-gradient-to-r from-primary to-nature bg-clip-text text-transparent">Sírius Garden</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Há mais de 10 anos transformando sonhos em realidade através da criação de ambientes únicos, 
+            Transformando sonhos em realidade através da criação de ambientes únicos, 
             funcionais e sustentáveis que conectam pessoas com a natureza.
           </p>
         </div>
