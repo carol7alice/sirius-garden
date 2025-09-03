@@ -139,8 +139,8 @@ const Contact = () => {
                     <Clock className="w-5 h-5 text-earth" />
                   </div>
                   <div>
-                    <div className="font-medium text-foreground">Seg - Sex: 8h às 18h</div>
-                    <div className="text-sm text-muted-foreground">Sáb: 8h às 12h</div>
+                    <div className="font-medium text-foreground">Segunda - Sexta 07h às 17h</div>
+                    <div className="text-sm text-muted-foreground">Sáb: 7h às 11h</div>
                   </div>
                 </div>
               </div>

@@ -24,7 +24,7 @@ const Services = () => {
     {
       icon: Droplets,
       title: "Piscinas & Áreas Aquáticas",
-      description: "Construção, reforma e manutenção de piscinas, spas, fontes e cascatas com tecnologia moderna e design inovador.",
+      description: "Manutenção de piscinas, spas, fontes e cascatas com tecnologia moderna e design inovador.",
       features: ["Limpeza profissional", "Tratamento químico", "Equipamentos modernos", "Monitoramento regular"],
       gradient: "from-water to-accent",
       bgColor: "water/10"

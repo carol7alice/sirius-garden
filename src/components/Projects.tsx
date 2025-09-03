@@ -5,58 +5,34 @@ import { ArrowRight, Calendar, Users, Droplets, TreePine, Home } from "lucide-re
 const Projects = () => {
   const caseStudies = [
     {
-      title: "Residência Moderna com Piscina Integrada",
-      client: "Família Silva",
-      duration: "3 meses",
-      budget: "R$ 80.000",
-      challenge: "Transformar um quintal abandonado em uma área de lazer completa com piscina, jardim e área gourmet.",
-      solution: "Criamos um projeto integrado com piscina de borda infinita, jardim vertical, deck de madeira e área gourmet com pergolado.",
-      results: [
-        "Aumento de 35% no valor do imóvel",
-        "Redução de 40% no consumo de água",
-        "100% de satisfação da família",
-        "Espaço utilizado diariamente"
-      ],
-      features: ["Piscina com bordas infinitas", "Jardim vertical sustentável", "Deck de madeira certificada", "Sistema de irrigação inteligente"],
-      category: "Residencial Completo",
-      icon: Home,
-      gradient: "from-water to-accent"
-    },
-    {
-      title: "Jardim Corporativo Sustentável",
-      client: "Empresa GreenTech",
-      duration: "2 meses",
-      budget: "R$ 45.000",
-      challenge: "Criar um espaço verde relaxante para funcionários em um ambiente urbano limitado.",
-      solution: "Desenvolvemos jardins verticais modulares, área de descanso com plantas nativas e sistema de captação de água da chuva.",
-      results: [
-        "Melhoria de 50% no bem-estar dos funcionários",
-        "Redução de 30% no estresse corporativo",
-        "Certificação LEED Green Building",
-        "Economia de 60% na conta de água"
-      ],
-      features: ["Jardins verticais modulares", "Plantas nativas da região", "Sistema de captação pluvial", "Mobiliário sustentável"],
-      category: "Corporativo",
+      title: "Jardim Vertical: Reconstrução e Irrigação Inteligente",
+      client: "Sra. Catarina Ramos (Residência no Jardim Ibisa, Eusébio)",
+      challenge: "Remontar todo o jardim vertical; algumas plantas nos vasos não eram apropriadas para esse tipo de jardim, estavam muito grandes, com raízes extensas e danificando o muro.",
+      solution: "Removemos todas as plantas desses vasos do jardim vertical que não eram adequadas, trouxemos novas mudas de outras espécies para recompor e colocamos a “mão na massa”. Montamos os vasos um a um com areia, brita, adubo e pedriscos para a drenagem. Removemos as raízes do muro e, em seguida, começamos a montar novamente todo o jardim vertical da cliente.",
+      features: ["Remontagem de jardim vertical", "Drenagem dos jarros", "Jardim vertical sustentável", "sistema de irrigação automática inteligente"],
+      category: "Jardim Vertical",
       icon: TreePine,
       gradient: "from-nature to-primary"
     },
     {
-      title: "Revitalização de Área Aquática",
-      client: "Condomínio Bella Vista",
-      duration: "1 mês",
-      budget: "R$ 25.000",
-      challenge: "Reformar piscina antiga com problemas de vazamento e criar paisagismo ao redor.",
-      solution: "Aplicamos impermeabilização moderna, novo sistema de filtragem e criamos jardim tropical integrado.",
-      results: [
-        "Eliminação completa de vazamentos",
-        "Redução de 45% nos custos de manutenção",
-        "Valorização da área comum",
-        "Aumento de 90% na utilização pelos moradores"
-      ],
-      features: ["Impermeabilização avançada", "Sistema de filtragem moderno", "Paisagismo tropical", "Iluminação LED subaquática"],
-      category: "Piscinas & Aquática",
+      title: "Manutenção de Piscina — Parc du Soleil",
+      client: "Condomínio Parc du Soleil",
+      challenge: "Serviço de manutenção e limpeza de piscina.",
+      solution: "Iniciamos verificando o nível da água. Removemos os detritos da superfície, verificamos o nível de pH e o nível de cloro (ou substituto), esvaziamos o cesto do skimmer e da bomba, aspiramos a piscina, verificamos a pressão do filtro e realizamos a escovação das paredes e do fundo.<br/>Em seguida, finalizamos com a manutenção preventiva, deixando a piscina limpa, com água cristalina e pronta para uso — com a qualidade que só a Sirius Garden oferece!",
+      features: ["Manutenção e limpeza de piscina", "Limpeza do filtro", "Escovação de paredes e fundo da piscina", "Manutenção preventiva"],
+      category: "Piscina corporativa",
       icon: Droplets,
       gradient: "from-accent to-water"
+    },
+    {
+      title: "Revitalização de Jardim e Jardim Vertical – Sebrae Fortaleza",
+      client: "SEDE SEBRAE FORTALEZA-CE",
+      challenge: "Serviço de jardinagem visando à manutenção, limpeza e revitalização de todo o jardim do prédio do SEBRAE.",
+      solution: " Iniciamos com a manutenção completa, incluindo podas e limpeza geral do jardim do SEBRAE, bem como a manutenção do jardim vertical. Em seguida, o técnico avaliou as necessidades de cada planta presente tanto no jardim principal quanto no jardim vertical. Começamos o processo de nutrição das plantas com adubação adequada, rega intensiva e aplicação de defensivos para controle de pragas e fungos, quando necessário. Continuaremos zelando e cuidando de cada planta conforme suas necessidades específicas, valorizando as áreas verdes e oferecendo soluções completas em jardinagem, paisagismo e pequenos reparos.",
+      features: ["Jardinagem", "Revitalização do jardim", "Jardim vertical sustentável", "Drenagem dos jarros"],
+      category: "Jardinagem corportativa",
+      icon: TreePine,
+      gradient: "from-nature to-primary"
     }
   ];
 
@@ -78,7 +54,7 @@ const Projects = () => {
             const IconComponent = project.icon;
             return (
               <Card key={index} className="overflow-hidden border-0 shadow-soft hover:shadow-elevated transition-all duration-300">
-                <div className="grid lg:grid-cols-2 gap-0">
+                <div className="">
                   {/* Project Info */}
                   <div className="p-8 lg:p-12">
                     <div className="flex items-center justify-between mb-6">
@@ -93,18 +69,10 @@ const Projects = () => {
                     <h3 className="text-2xl font-bold text-foreground mb-4">{project.title}</h3>
                     
                     {/* Project Details */}
-                    <div className="grid grid-cols-3 gap-4 mb-6">
+                    <div className="mb-6">
                       <div>
                         <div className="text-sm text-muted-foreground">Cliente</div>
                         <div className="font-medium text-foreground">{project.client}</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-muted-foreground">Duração</div>
-                        <div className="font-medium text-foreground">{project.duration}</div>
-                      </div>
-                      <div>
-                        <div className="text-sm text-muted-foreground">Investimento</div>
-                        <div className="font-medium text-foreground">{project.budget}</div>
                       </div>
                     </div>
 
@@ -117,7 +85,7 @@ const Projects = () => {
                     {/* Solution */}
                     <div className="mb-6">
                       <h4 className="font-bold text-foreground mb-2">💡 Solução</h4>
-                      <p className="text-muted-foreground">{project.solution}</p>
+                      <p className="text-muted-foreground" dangerouslySetInnerHTML={{__html: project.solution}} />
                     </div>
 
                     {/* Features */}
@@ -130,29 +98,6 @@ const Projects = () => {
                             <span className="text-muted-foreground">{feature}</span>
                           </div>
                         ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Results */}
-                  <div className="bg-gradient-to-br from-primary/5 to-nature/5 p-8 lg:p-12 flex flex-col justify-center">
-                    <h4 className="text-xl font-bold text-foreground mb-6">📈 Resultados Alcançados</h4>
-                    
-                    <div className="space-y-4">
-                      {project.results.map((result, resultIndex) => (
-                        <div key={resultIndex} className="flex items-start space-x-3">
-                          <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <div className="w-2 h-2 bg-primary rounded-full"></div>
-                          </div>
-                          <span className="text-foreground font-medium">{result}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="mt-8 p-4 bg-background/50 rounded-lg border border-border">
-                      <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                        <Calendar className="w-4 h-4" />
-                        <span>Projeto concluído em {project.duration}</span>
                       </div>
                     </div>
                   </div>
